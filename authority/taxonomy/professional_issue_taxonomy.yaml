@@ -1,0 +1,36 @@
+kind: taxonomy_contract
+name: governed_professional_issue_taxonomy
+version: 1
+
+issue_classes:
+  authorization_boundary:
+    label: "Authorization Boundary Validation Issue"
+    plain_language: "A protected workflow may not be enforcing access boundaries consistently."
+    value_relevance: high
+
+  session_state_consistency:
+    label: "Session State Consistency Issue"
+    plain_language: "A session-dependent workflow may behave inconsistently across replayed validation steps."
+    value_relevance: high
+
+  workflow_state_transition:
+    label: "Workflow State Transition Issue"
+    plain_language: "A multi-step workflow may allow an unexpected or inconsistent state transition."
+    value_relevance: high
+
+  replay_consistency:
+    label: "Replay Consistency Issue"
+    plain_language: "The validation behavior changes across repeated replay attempts."
+    value_relevance: medium
+
+  evidence_integrity:
+    label: "Evidence Integrity Issue"
+    plain_language: "The evidence chain is incomplete or inconsistent and requires manual review."
+    value_relevance: medium
+
+manual_review:
+  required: true
+
+blocked_behavior:
+  - unsupported_classification
+  - autonomous_submission

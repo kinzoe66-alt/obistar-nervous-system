@@ -1,0 +1,46 @@
+kind: explanation_contract
+name: governed_human_readable_explanations
+version: 1
+
+style:
+  tone:
+    - professional
+    - concise
+    - reviewer_readable
+    - remediation_friendly
+
+  avoid:
+    - academic_language
+    - absolute_claims
+    - machine_phrasing
+    - unsupported_assertions
+
+patterns:
+
+  possible_idor_pattern:
+    templates:
+      - "Repeated testing suggests some object references may not be checked consistently between users or workflow states."
+      - "Some referenced records or actions may be accessible without the expected authorization checks."
+
+  possible_auth_boundary_issue:
+    templates:
+      - "Some protected actions may not consistently enforce the expected permission checks."
+      - "Workflow testing suggests authorization boundaries may not behave consistently across repeated requests."
+
+  possible_session_state_issue:
+    templates:
+      - "Session behavior appears inconsistent when repeating the same workflow steps multiple times."
+      - "Repeated workflow execution produced session-state behavior that may not be fully consistent."
+
+  possible_workflow_transition_issue:
+    templates:
+      - "Certain workflow transitions behaved differently during repeated testing under similar conditions."
+      - "Workflow state handling may not remain consistent across repeated transitions."
+
+manual_review:
+  required: true
+
+blocked_behavior:
+  - confirmed_issue_claim
+  - exploit_claim
+  - autonomous_submission

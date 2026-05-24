@@ -1,0 +1,28 @@
+kind: asset_identity_contract
+name: governed_asset_identity
+version: 1
+
+required_fields:
+  - runtime_surface_id
+  - canonical_asset_name
+  - asset_category
+  - vendor
+  - asset_reference
+  - authorization_source
+  - scope_status
+  - review_alias
+
+allowed_asset_categories:
+  - hardware_iot
+  - mobile_device
+  - api
+  - web
+  - workflow
+
+manual_review:
+  required: true
+
+blocked_behavior:
+  - asset_identity_mutation
+  - unauthorized_scope_rewriting
+  - autonomous_submission

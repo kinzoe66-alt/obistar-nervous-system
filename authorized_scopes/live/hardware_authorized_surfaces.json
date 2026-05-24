@@ -1,0 +1,47 @@
+[
+  {
+    "runtime_surface_id": "hw-surface-001",
+    "canonical_asset_name": "FindX7",
+    "asset_category": "hardware_iot",
+    "vendor": "OPPO",
+    "asset_reference": "FindX7",
+    "authorization_source": "HackerOne",
+    "scope_status": "eligible",
+    "severity_scope": "critical",
+    "review_alias": "OPPO FindX7 Hardware Validation Surface",
+    "program": "governed_program",
+    "surface_type": "hardware_iot",
+    "authorized_scope": true,
+    "validation_surface": "hardware_iot"
+  },
+  {
+    "runtime_surface_id": "hw-surface-002",
+    "canonical_asset_name": "FindX7Ultra",
+    "asset_category": "hardware_iot",
+    "vendor": "OPPO",
+    "asset_reference": "FindX7Ultra",
+    "authorization_source": "HackerOne",
+    "scope_status": "eligible",
+    "severity_scope": "critical",
+    "review_alias": "OPPO FindX7 Ultra Hardware Validation Surface",
+    "program": "governed_program",
+    "surface_type": "hardware_iot",
+    "authorized_scope": true,
+    "validation_surface": "hardware_iot"
+  },
+  {
+    "runtime_surface_id": "hw-surface-003",
+    "canonical_asset_name": "realme GT7Pro",
+    "asset_category": "hardware_iot",
+    "vendor": "realme",
+    "asset_reference": "realme GT7Pro",
+    "authorization_source": "HackerOne",
+    "scope_status": "eligible",
+    "severity_scope": "critical",
+    "review_alias": "realme GT7Pro Hardware Validation Surface",
+    "program": "governed_program",
+    "surface_type": "hardware_iot",
+    "authorized_scope": true,
+    "validation_surface": "hardware_iot"
+  }
+]

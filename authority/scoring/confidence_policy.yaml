@@ -1,0 +1,17 @@
+kind: scoring_contract
+name: confidence_policy
+version: 1
+
+score_range:
+  min: 0.0
+  max: 1.0
+
+thresholds:
+  queue_for_manual_review: 0.70
+  require_more_evidence: 0.40
+  reject_as_insufficient: 0.39
+
+rules:
+  clamp_score: true
+  require_replay_for_high_confidence: true
+  require_manual_review_for_reporting: true

@@ -1,0 +1,28 @@
+kind: stability_contract
+name: governed_replay_stability
+version: 1
+
+stability_signals:
+  replay_consistent:
+    weight: 0.40
+
+  evidence_consistent:
+    weight: 0.30
+
+  lineage_consistent:
+    weight: 0.20
+
+  cognition_consistent:
+    weight: 0.10
+
+thresholds:
+  stable: 0.90
+  review_required: 0.70
+  unstable: 0.69
+
+manual_review:
+  required: true
+
+blocked_behavior:
+  - unstable_replay_submission
+  - unsupported_stability_claims

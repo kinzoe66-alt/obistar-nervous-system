@@ -1,0 +1,24 @@
+kind: surface_contract
+name: surface_002_session_workflow
+version: 1
+
+surface:
+  surface_id: surface-002
+  program: governed_program
+  surface_type: session_workflow
+  authorized_scope: true
+  validation_surface: api
+
+workflow:
+  replay_required: true
+  evidence_required: true
+  manual_review_required: true
+
+reporting:
+  simplified_explanation: true
+  replay_certification_required: true
+
+blocked_behavior:
+  - uncontrolled_continuation
+  - autonomous_submission
+  - out_of_scope_execution

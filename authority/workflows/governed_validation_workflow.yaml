@@ -1,0 +1,21 @@
+kind: workflow_contract
+name: governed_validation_workflow
+version: 1
+
+steps:
+  - load_authority
+  - normalize_contracts
+  - validate_handshake
+  - execute_validator
+  - persist_evidence
+  - certify_replay
+  - score_observation
+  - queue_manual_review
+
+terminal_state:
+  manual_review: true
+
+blocked_steps:
+  - autonomous_submission
+  - out_of_scope_execution
+  - uncontrolled_continuation

@@ -1,0 +1,20 @@
+kind: inheritance_contract
+name: governed_inheritance_policy
+version: 1
+
+rules:
+  deterministic_ordering: true
+  explicit_override_only: true
+  no_implicit_merge: true
+  replay_trace_required: true
+
+priority_order:
+  - worldview
+  - authority_contract
+  - program_contract
+  - workflow_contract
+  - validator_contract
+  - scoring_contract
+  - finding_contract
+  - adjudication_contract
+  - escalation_contract

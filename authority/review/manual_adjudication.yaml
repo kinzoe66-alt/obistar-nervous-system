@@ -1,0 +1,15 @@
+kind: adjudication_contract
+name: governed_manual_adjudication
+version: 1
+
+requirements:
+  replay_trace_required: true
+  evidence_bundle_required: true
+  reproducibility_required: true
+
+terminal_actions:
+  - manual_review_queue
+
+blocked_actions:
+  - autonomous_submission
+  - automatic_escalation

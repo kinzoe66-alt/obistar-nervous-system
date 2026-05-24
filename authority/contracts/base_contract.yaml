@@ -1,0 +1,19 @@
+kind: authority_contract
+name: base_authority_contract
+version: 1
+
+required_fields:
+  - kind
+  - name
+  - version
+
+activation_requirements:
+  - execution_surface
+  - authority_scope
+  - runtime_permission
+
+governance_rules:
+  no_implicit_activation: true
+  no_cross_scope_inheritance: true
+  manual_review_terminal: true
+  replay_required: true

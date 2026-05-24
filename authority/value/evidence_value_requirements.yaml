@@ -1,0 +1,22 @@
+kind: value_evidence_contract
+name: governed_value_evidence_requirements
+version: 1
+
+required_value_evidence:
+  replay_stable:
+    evidence_key: replay_trace
+  evidence_complete:
+    evidence_key: evidence_bundle
+  state_lineage_present:
+    evidence_key: state_lineage
+  authorization_boundary_relevant:
+    evidence_key: boundary_context
+  business_workflow_relevant:
+    evidence_key: workflow_context
+
+manual_review:
+  required: true
+
+blocked_behavior:
+  - unsupported_value_classification
+  - autonomous_submission

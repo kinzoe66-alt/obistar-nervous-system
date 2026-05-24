@@ -1,0 +1,16 @@
+kind: readiness_contract
+name: adjudication_readiness
+version: 1
+
+requirements:
+  minimum_confidence: 1.0
+  required_priority: high
+  observation_prefix:
+    - real_surface_
+
+manual_review:
+  required: true
+
+blocked_behavior:
+  - autonomous_submission
+  - automatic_reporting

@@ -1,0 +1,49 @@
+kind: pattern_inference_contract
+name: governed_pattern_inference
+version: 1
+
+patterns:
+  possible_idor_pattern:
+    label: "Possible Object Reference Authorization Pattern"
+    signals:
+      object_reference_present: 0.30
+      authorization_context_present: 0.25
+      replay_stable: 0.25
+      evidence_complete: 0.20
+
+  possible_auth_boundary_issue:
+    label: "Possible Authorization Boundary Pattern"
+    signals:
+      authorization_context_present: 0.35
+      protected_workflow_present: 0.25
+      replay_stable: 0.20
+      evidence_complete: 0.20
+
+  possible_session_state_issue:
+    label: "Possible Session State Consistency Pattern"
+    signals:
+      session_context_present: 0.35
+      state_lineage_present: 0.25
+      replay_stable: 0.20
+      evidence_complete: 0.20
+
+  possible_workflow_transition_issue:
+    label: "Possible Workflow State Transition Pattern"
+    signals:
+      workflow_context_present: 0.35
+      state_lineage_present: 0.25
+      replay_stable: 0.20
+      evidence_complete: 0.20
+
+thresholds:
+  strong_inference: 0.85
+  moderate_inference: 0.60
+  weak_inference: 0.59
+
+manual_review:
+  required: true
+
+blocked_behavior:
+  - confirmed_issue_claim
+  - autonomous_submission
+  - unsupported_pattern_claim

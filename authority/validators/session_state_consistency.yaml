@@ -1,0 +1,31 @@
+kind: validator_contract
+name: session_state_consistency
+version: 1
+
+execution_surface: governed_validation
+
+requires:
+  replay: true
+  evidence_bundle: true
+  manual_review: true
+
+evidence_expectations:
+  required:
+    - prior_state
+    - current_state
+    - transition_record
+    - replay_trace
+
+confidence_model:
+  positive_indicators:
+    state_transition_reproducible: 0.40
+    replay_consistent: 0.35
+    evidence_complete: 0.25
+
+  suppressors:
+    missing_replay_trace: -0.50
+    incomplete_transition_record: -0.35
+
+adjudication:
+  terminal_state: manual_review
+  autonomous_submission: false

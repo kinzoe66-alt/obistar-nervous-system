@@ -1,0 +1,27 @@
+kind: deliverable_contract
+name: governed_report_deliverable
+version: 1
+
+required_sections:
+  - professional_label
+  - simplified_summary
+  - affected_surface
+  - validation_conditions
+  - replay_steps
+  - evidence_summary
+  - remediation_guidance
+  - confidence_rationale
+
+quality_weights:
+  replay_reproducibility: 0.30
+  evidence_clarity: 0.25
+  remediation_quality: 0.20
+  simplified_explanation: 0.15
+  reviewer_readiness: 0.10
+
+manual_review:
+  required: true
+
+blocked_behavior:
+  - unsupported_claims
+  - autonomous_submission

@@ -1,0 +1,23 @@
+kind: worldview
+name: governed_validation_runtime
+version: 1
+immutable: true
+
+core_law:
+  execution_is_deterministic: true
+  authority_is_declarative: true
+  automation_terminates_at: manual_review
+
+allowed_runtime_behavior:
+  - replay
+  - evidence_collection
+  - scope_validation
+  - validator_execution
+  - report_generation
+  - manual_review_queueing
+
+blocked_runtime_behavior:
+  - autonomous_submission
+  - out_of_scope_execution
+  - uncontrolled_continuation
+  - authority_escalation

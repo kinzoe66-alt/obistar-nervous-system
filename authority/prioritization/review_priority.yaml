@@ -1,0 +1,27 @@
+kind: priority_contract
+name: governed_review_priority
+version: 1
+
+priority_weights:
+  high_value_candidate: 0.35
+  stable_replay: 0.25
+  high_quality_report: 0.20
+  positive_outcome_signal: 0.15
+  unique_or_low_duplicate_risk: 0.05
+
+penalties:
+  duplicate: -0.50
+  possible_duplicate: -0.20
+  weak_outcome_signal: -0.20
+
+thresholds:
+  highest_priority: 0.85
+  priority_review: 0.60
+  hold: 0.59
+
+manual_review:
+  required: true
+
+blocked_behavior:
+  - autonomous_submission
+  - autonomous_rejection

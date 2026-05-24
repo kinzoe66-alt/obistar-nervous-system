@@ -1,0 +1,31 @@
+kind: outcome_contract
+name: governed_outcome_learning
+version: 1
+
+outcome_weights:
+  accepted:
+    weight: 1.00
+
+  rewarded:
+    weight: 1.25
+
+  duplicate:
+    weight: -0.40
+
+  rejected:
+    weight: -0.75
+
+  informational:
+    weight: 0.10
+
+learning_thresholds:
+  high_signal: 0.90
+  medium_signal: 0.50
+  weak_signal: 0.25
+
+manual_review:
+  required: true
+
+blocked_behavior:
+  - autonomous_decisioning
+  - unsupported_learning

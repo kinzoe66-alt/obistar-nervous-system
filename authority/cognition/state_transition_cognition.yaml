@@ -1,0 +1,23 @@
+kind: cognition_contract
+name: state_transition_cognition
+version: 1
+
+applies_to:
+  - state_transition
+
+validator_focus:
+  - transition_ordering
+  - lineage_integrity
+  - replay_continuity
+
+reporting_focus:
+  simplified_explanations: true
+  replay_certification_required: true
+
+workflow_constraints:
+  replay_required: true
+  manual_review_required: true
+
+blocked_behavior:
+  - unverifiable_transition_claims
+  - uncontrolled_execution

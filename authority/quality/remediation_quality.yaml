@@ -1,0 +1,24 @@
+kind: remediation_quality_contract
+name: governed_remediation_quality
+version: 1
+
+signals:
+  root_cause_guidance:
+    weight: 0.35
+  validation_context:
+    weight: 0.25
+  replay_reference:
+    weight: 0.20
+  recommended_review_action:
+    weight: 0.20
+
+thresholds:
+  strong: 0.85
+  acceptable: 0.65
+  weak: 0.64
+
+manual_review:
+  required: true
+
+blocked_behavior:
+  - unsupported_remediation_claims

@@ -1,0 +1,7 @@
+{
+  "program": "second_authorized_program",
+  "source": "hackerone_authorized_scope_user_provided",
+  "manual_review_required": true,
+  "autonomous_submission": false,
+  "surfaces": []
+}

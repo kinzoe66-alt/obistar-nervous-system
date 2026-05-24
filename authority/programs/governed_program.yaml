@@ -1,0 +1,19 @@
+kind: program_contract
+name: governed_program
+version: 1
+
+scope_governance:
+  authorized_only: true
+  replay_required: true
+  evidence_required: true
+
+workflow_constraints:
+  manual_review_required: true
+  autonomous_submission: false
+
+execution_constraints:
+  out_of_scope_execution: false
+  uncontrolled_continuation: false
+
+reporting:
+  adjudication_required: true

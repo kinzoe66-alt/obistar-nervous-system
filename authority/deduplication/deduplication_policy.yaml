@@ -1,0 +1,27 @@
+kind: deduplication_contract
+name: governed_deduplication_policy
+version: 1
+
+similarity_signals:
+  same_surface_type:
+    weight: 0.20
+  same_validation_surface:
+    weight: 0.20
+  same_issue_class:
+    weight: 0.25
+  same_workflow:
+    weight: 0.20
+  same_cognition_focus:
+    weight: 0.15
+
+thresholds:
+  duplicate: 0.85
+  possible_duplicate: 0.60
+  unique: 0.59
+
+manual_review:
+  required: true
+
+blocked_behavior:
+  - autonomous_duplicate_rejection
+  - unsupported_similarity_claims

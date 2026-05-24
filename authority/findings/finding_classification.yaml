@@ -1,0 +1,24 @@
+kind: finding_contract
+name: governed_finding_classification
+version: 1
+
+classification:
+  reproducible:
+    minimum_score: 0.70
+    replay_required: true
+    evidence_required: true
+
+  insufficient_evidence:
+    maximum_score: 0.39
+
+  requires_manual_review:
+    minimum_score: 0.40
+
+promotion_rules:
+  require_replay_consistency: true
+  require_evidence_bundle: true
+  require_manual_review: true
+
+blocked_behavior:
+  - autonomous_reporting
+  - unverifiable_promotion

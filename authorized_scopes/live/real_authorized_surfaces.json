@@ -1,0 +1,26 @@
+[
+  {
+    "surface_id": "authorized-api-surface-001",
+    "program": "governed_program",
+    "surface_type": "api",
+    "authorized_scope": true,
+    "validation_surface": "api",
+    "source": "authorized_scope_import"
+  },
+  {
+    "surface_id": "authorized-session-surface-002",
+    "program": "governed_program",
+    "surface_type": "session_workflow",
+    "authorized_scope": true,
+    "validation_surface": "api",
+    "source": "authorized_scope_import"
+  },
+  {
+    "surface_id": "authorized-transition-surface-003",
+    "program": "governed_program",
+    "surface_type": "state_transition",
+    "authorized_scope": true,
+    "validation_surface": "api",
+    "source": "authorized_scope_import"
+  }
+]

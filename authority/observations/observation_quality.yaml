@@ -1,0 +1,25 @@
+kind: observation_quality_contract
+name: governed_observation_quality
+version: 1
+
+quality_weights:
+  reproducible:
+    weight: 0.30
+  understandable:
+    weight: 0.25
+  low_duplicate_pressure:
+    weight: 0.20
+  operationally_meaningful:
+    weight: 0.25
+
+thresholds:
+  strongest_candidate: 0.85
+  review_candidate: 0.60
+  hold: 0.59
+
+manual_review:
+  required: true
+
+blocked_behavior:
+  - autonomous_submission
+  - unsupported_quality_claims

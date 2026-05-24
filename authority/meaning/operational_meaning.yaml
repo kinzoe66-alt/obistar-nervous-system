@@ -1,0 +1,36 @@
+kind: operational_meaning_contract
+name: governed_operational_meaning
+version: 1
+
+metric_labels:
+  replay_stability:
+    label: "Reproducibility Stability"
+    meaning: "The observed behavior was reproduced consistently across repeated governed validation attempts."
+
+  report_quality:
+    label: "Evidence Quality"
+    meaning: "The observation includes understandable replay context, supporting evidence, and reviewer-readable structure."
+
+  outcome_learning:
+    label: "Historical Operational Exposure Signal"
+    meaning: "Observations with similar characteristics have historically aligned with meaningful authorization, workflow, or exposure-related review outcomes."
+
+  review_priority:
+    label: "Business / Review Priority"
+    meaning: "This observation appears more operationally important due to replay consistency, evidence quality, historical signal, and possible workflow or authorization impact."
+
+  inferred_patterns:
+    label: "Pattern Suggestion"
+    meaning: "Behavioral indicators suggest possible authorization, object-reference, session, or workflow-consistency issues requiring manual review."
+
+  human_readable_explanations:
+    label: "Operational Summary & Potential Impact"
+    meaning: "A reviewer-readable summary of what may be occurring and why the observation may matter."
+
+manual_review:
+  required: true
+
+blocked_behavior:
+  - confirmed_issue_claim
+  - unsupported_impact_claim
+  - autonomous_submission

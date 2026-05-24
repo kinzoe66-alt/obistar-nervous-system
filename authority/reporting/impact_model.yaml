@@ -1,0 +1,18 @@
+kind: impact_contract
+name: governed_impact_model
+version: 1
+
+impact_levels:
+  low:
+    plain_language: "The issue has limited effect and requires narrow conditions."
+  medium:
+    plain_language: "The issue may affect user trust, workflow integrity, or data handling."
+  high:
+    plain_language: "The issue may affect protected actions, account boundaries, or important business workflows."
+  critical:
+    plain_language: "The issue may affect core authorization boundaries or sensitive user-controlled actions."
+
+requirements:
+  evidence_required: true
+  replay_required: true
+  manual_review_required: true

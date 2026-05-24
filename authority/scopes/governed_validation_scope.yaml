@@ -1,0 +1,20 @@
+kind: scope_contract
+name: governed_validation_scope
+version: 1
+
+execution_surface:
+  allowed:
+    - governed_validation
+    - replay_validation
+    - evidence_review
+
+blocked_execution:
+  - uncontrolled_continuation
+  - out_of_scope_execution
+
+validator_constraints:
+  replay_required: true
+  evidence_required: true
+
+manual_review:
+  required: true

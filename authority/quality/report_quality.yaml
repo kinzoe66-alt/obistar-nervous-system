@@ -1,0 +1,31 @@
+kind: quality_contract
+name: governed_report_quality_model
+version: 1
+
+quality_signals:
+  simplified_explanation:
+    weight: 0.30
+
+  remediation_present:
+    weight: 0.25
+
+  replay_reference_present:
+    weight: 0.20
+
+  evidence_complete:
+    weight: 0.15
+
+  impact_clarity:
+    weight: 0.10
+
+thresholds:
+  high_quality: 0.90
+  acceptable: 0.70
+  insufficient: 0.69
+
+manual_review:
+  required: true
+
+blocked_behavior:
+  - unsupported_impact_claims
+  - unverifiable_reporting

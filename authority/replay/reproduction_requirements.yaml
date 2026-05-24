@@ -1,0 +1,16 @@
+kind: reproduction_contract
+name: governed_reproduction_requirements
+version: 1
+
+required_replay_elements:
+  - deterministic_steps
+  - validation_preconditions
+  - replay_trace_reference
+  - expected_behavior
+  - observed_behavior
+
+manual_review:
+  required: true
+
+blocked_behavior:
+  - unverifiable_reproduction

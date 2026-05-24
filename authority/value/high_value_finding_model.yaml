@@ -1,0 +1,36 @@
+kind: value_contract
+name: governed_high_value_finding_model
+version: 1
+
+value_indicators:
+  replay_stable:
+    weight: 0.30
+  evidence_complete:
+    weight: 0.25
+  state_lineage_present:
+    weight: 0.20
+  authorization_boundary_relevant:
+    weight: 0.15
+  business_workflow_relevant:
+    weight: 0.10
+
+thresholds:
+  high_value_candidate: 0.85
+  review_candidate: 0.60
+  insufficient_value: 0.59
+
+suppression_rules:
+  replay_missing:
+    reject: true
+  evidence_missing:
+    reject: true
+  manual_review_missing:
+    reject: true
+
+manual_review:
+  required: true
+
+blocked_behavior:
+  - autonomous_submission
+  - unsupported_claims
+  - out_of_scope_execution

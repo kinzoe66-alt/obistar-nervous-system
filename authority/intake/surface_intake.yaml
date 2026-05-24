@@ -1,0 +1,17 @@
+kind: intake_contract
+name: governed_surface_intake
+version: 1
+
+requirements:
+  surface_id_required: true
+  program_required: true
+  authorized_scope_required: true
+  validation_surface_required: true
+
+blocked_behavior:
+  - out_of_scope_import
+  - implicit_authorization
+  - uncontrolled_continuation
+
+manual_review:
+  required: true

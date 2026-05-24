@@ -1,0 +1,23 @@
+kind: cognition_contract
+name: api_surface_cognition
+version: 1
+
+applies_to:
+  - api
+
+validator_focus:
+  - replay_consistency
+  - evidence_integrity
+  - state_transition_visibility
+
+reporting_focus:
+  simplified_explanations: true
+  impact_clarity_required: true
+
+workflow_constraints:
+  replay_required: true
+  manual_review_required: true
+
+blocked_behavior:
+  - unsupported_claims
+  - uncontrolled_continuation

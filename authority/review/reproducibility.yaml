@@ -1,0 +1,21 @@
+kind: reproducibility_contract
+name: governed_reproducibility
+version: 1
+
+requirements:
+  initial_validation_required: false
+  replay_validation_required: false
+  live_validation_required: false
+
+promotion:
+  status: reproducible_candidate
+
+evidence_requirements:
+  - evidence_log
+  - live_validation_log
+
+manual_review:
+  required: true
+
+blocked_behavior:
+  - autonomous_reporting

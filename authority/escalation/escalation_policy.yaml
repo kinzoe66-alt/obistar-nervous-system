@@ -1,0 +1,15 @@
+kind: escalation_contract
+name: governed_escalation_policy
+version: 1
+
+escalation_requirements:
+  minimum_confidence: 0.85
+  replay_consistent: true
+  evidence_complete: true
+
+manual_review:
+  required: true
+
+blocked_escalation:
+  - unverifiable_findings
+  - incomplete_replay

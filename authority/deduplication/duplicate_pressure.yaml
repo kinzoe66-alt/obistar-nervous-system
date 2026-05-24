@@ -1,0 +1,19 @@
+kind: duplicate_pressure_contract
+name: governed_duplicate_pressure
+version: 1
+
+pressure_levels:
+  duplicate:
+    multiplier: 0.25
+
+  possible_duplicate:
+    multiplier: 0.65
+
+  unique:
+    multiplier: 1.00
+
+manual_review:
+  required: true
+
+blocked_behavior:
+  - autonomous_rejection

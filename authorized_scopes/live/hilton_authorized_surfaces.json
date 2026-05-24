@@ -1,0 +1,65 @@
+{
+  "program": "hilton",
+  "source": "hackerone_authorized_scope_user_provided",
+  "manual_review_required": true,
+  "autonomous_submission": false,
+  "surfaces": [
+    {
+      "runtime_surface_id": "hilton-domain-001",
+      "canonical_asset_name": "hilton.com",
+      "asset_category": "web",
+      "vendor": "Hilton",
+      "asset_reference": "hilton.com",
+      "authorization_source": "HackerOne",
+      "scope_status": "eligible",
+      "review_alias": "Hilton Main Domain",
+      "asset_type": "domain",
+      "severity": "critical",
+      "workflow_focus": "honors_account_creation_authentication",
+      "authorized_scope": true,
+      "validation_surface": "web"
+    },
+    {
+      "runtime_surface_id": "hilton-domain-002",
+      "canonical_asset_name": "hiltonlocalbiz.com",
+      "asset_category": "web",
+      "vendor": "Hilton",
+      "asset_reference": "hiltonlocalbiz.com",
+      "authorization_source": "HackerOne",
+      "scope_status": "eligible",
+      "review_alias": "Hilton Local Business Domain",
+      "asset_type": "domain",
+      "severity": "critical",
+      "authorized_scope": true,
+      "validation_surface": "web"
+    },
+    {
+      "runtime_surface_id": "hilton-domain-003",
+      "canonical_asset_name": "hiltonbusinessonline.com",
+      "asset_category": "web",
+      "vendor": "Hilton",
+      "asset_reference": "hiltonbusinessonline.com",
+      "authorization_source": "HackerOne",
+      "scope_status": "eligible",
+      "review_alias": "Hilton Business Online Domain",
+      "asset_type": "domain",
+      "severity": "critical",
+      "authorized_scope": true,
+      "validation_surface": "web"
+    },
+    {
+      "runtime_surface_id": "hilton-domain-004",
+      "canonical_asset_name": "hilton.io",
+      "asset_category": "web",
+      "vendor": "Hilton",
+      "asset_reference": "hilton.io",
+      "authorization_source": "HackerOne",
+      "scope_status": "eligible",
+      "review_alias": "Hilton IO Domain",
+      "asset_type": "domain",
+      "severity": "critical",
+      "authorized_scope": true,
+      "validation_surface": "web"
+    }
+  ]
+}
