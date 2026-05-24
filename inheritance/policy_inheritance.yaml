@@ -1,0 +1,13 @@
+inheritance: organizational_policy
+version: 1
+order:
+  - primitive_invariants
+  - organizational_overlay
+  - pathway_contract
+  - runtime_composition
+rules:
+  lower_layers_may_not_override_higher_authority: true
+  explicit_exception_requires_review: true
+  inherited_constraints_remain_active: true
+manual_review_required: true
+autonomous_submission: false

@@ -1,0 +1,12 @@
+assembly: cross_pathway_continuity
+version: 1
+allowed_pathways:
+  - review_adjudication
+  - artifact_governance
+  - identity_continuity
+composition_rules:
+  shared_lineage_required: true
+  authority_boundary_required: true
+  hidden_transition_forbidden: true
+manual_review_required: true
+autonomous_submission: false

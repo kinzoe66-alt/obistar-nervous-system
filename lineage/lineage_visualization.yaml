@@ -1,0 +1,16 @@
+visualization: continuity_lineage
+version: 1
+views:
+  - pathway_state_flow
+  - governance_overlay_trace
+  - review_adjudication_trace
+required_lineage:
+  - source_contract
+  - active_pathway
+  - applied_overlay
+  - review_state
+forbids:
+  - orphan_state
+  - hidden_transition
+manual_review_required: true
+autonomous_submission: false

@@ -1,0 +1,16 @@
+compression: review_continuity
+version: 1
+compressible_items:
+  - duplicate_lineage
+  - repeated_artifact_evidence
+  - equivalent_replay_trace
+preserve:
+  - reviewer_decision
+  - evidence_identity
+  - replay_result
+  - lineage_signature
+forbids:
+  - evidence_loss
+  - reviewer_context_loss
+manual_review_required: true
+autonomous_submission: false

@@ -1,0 +1,17 @@
+automation: runtime_composition
+version: 1
+inputs:
+  - primitive_standard
+  - pathway
+  - governance_overlay
+  - review_requirements
+outputs:
+  - composition_manifest
+  - validation_plan
+  - review_route
+constraints:
+  deterministic_output_required: true
+  bounded_authority_required: true
+  manual_adjudication_required: true
+manual_review_required: true
+autonomous_submission: false

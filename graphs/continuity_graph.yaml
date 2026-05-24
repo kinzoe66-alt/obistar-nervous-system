@@ -1,0 +1,24 @@
+graph: continuity_infrastructure
+version: 1
+nodes:
+  - primitive_compression
+  - pathway_library
+  - governance_overlay
+  - runtime_composition
+  - review_adjudication
+edges:
+  primitive_compression:
+    - pathway_library
+  pathway_library:
+    - governance_overlay
+  governance_overlay:
+    - runtime_composition
+  runtime_composition:
+    - review_adjudication
+protected_invariants:
+  - bounded_authority
+  - deterministic_replay
+  - manual_adjudication_continuity
+  - primitive_compression
+manual_review_required: true
+autonomous_submission: false
