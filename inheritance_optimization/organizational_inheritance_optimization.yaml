@@ -1,0 +1,17 @@
+optimization: organizational_inheritance
+version: 1
+goals:
+  - reduce_duplicate_constraints
+  - preserve_high_authority_invariants
+  - compress_equivalent_policy_paths
+protected:
+  - primitive_compression
+  - bounded_authority
+  - explicit_lineage
+  - manual_adjudication_continuity
+forbids:
+  - authority_inversion
+  - implicit_override
+  - lineage_loss
+manual_review_required: true
+autonomous_submission: false

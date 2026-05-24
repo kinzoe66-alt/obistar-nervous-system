@@ -1,0 +1,15 @@
+execution: runtime_graph
+version: 1
+allowed_nodes:
+  - primitive
+  - pathway
+  - overlay
+  - composition
+  - review_route
+execution_constraints:
+  deterministic_order_required: true
+  hidden_edge_forbidden: true
+  bounded_authority_required: true
+  manual_adjudication_terminal: true
+manual_review_required: true
+autonomous_submission: false

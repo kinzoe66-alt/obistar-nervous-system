@@ -1,0 +1,13 @@
+rendering: lineage_graph
+version: 1
+required_views:
+  - primitive_to_pathway
+  - pathway_to_overlay
+  - overlay_to_composition
+  - composition_to_review
+rendering_constraints:
+  orphan_nodes_forbidden: true
+  hidden_edges_forbidden: true
+  reviewer_context_required: true
+manual_review_required: true
+autonomous_submission: false

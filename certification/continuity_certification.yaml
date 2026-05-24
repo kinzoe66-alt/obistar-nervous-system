@@ -1,0 +1,16 @@
+certification: continuity_integrity
+version: 1
+certifies:
+  - bounded_authority
+  - primitive_compression
+  - deterministic_replay
+  - explicit_lineage
+  - manual_adjudication_continuity
+required_evidence:
+  - primitive_integrity_check
+  - pathway_trace
+  - overlay_trace
+  - review_route
+  - replay_or_lineage_artifact
+manual_review_required: true
+autonomous_submission: false

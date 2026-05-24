@@ -1,0 +1,14 @@
+intelligence: review_prioritization
+version: 1
+signals:
+  - replay_consistency
+  - lineage_completeness
+  - policy_conflict_presence
+  - evidence_quality
+  - reviewer_context_completeness
+constraints:
+  prioritization_only: true
+  autonomous_final_decision_forbidden: true
+  manual_adjudication_required: true
+manual_review_required: true
+autonomous_submission: false
