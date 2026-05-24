@@ -1,0 +1,15 @@
+governance_domain: governed_validation
+version: 1
+applies_to_pathways:
+  - governed_validation
+constraints:
+  authorized_scope_only: true
+  deterministic_replay_required: true
+  bounded_cli_sequence_only: true
+  exploratory_expansion_forbidden: true
+review_requirements:
+  replay_artifact_required: true
+  reviewer_ready_package_required: true
+  manual_adjudication_required: true
+manual_review_required: true
+autonomous_submission: false

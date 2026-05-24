@@ -1,0 +1,15 @@
+standard: continuity_primitives
+version: 1
+primitives:
+  - semantic_identity
+  - authority_boundary
+  - state_transition
+  - transformation_integrity
+  - artifact_governance
+  - replay_continuity
+  - review_escalation
+  - continuity_lineage
+  - constraint_envelope
+  - operational_pathway
+manual_review_required: true
+autonomous_submission: false

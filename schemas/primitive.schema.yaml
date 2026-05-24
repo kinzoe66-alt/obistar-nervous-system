@@ -1,0 +1,13 @@
+schema: primitive_contract
+version: 1
+required_fields:
+  - primitive
+  - version
+  - law
+  - requires
+  - forbids
+  - manual_review_required
+invariants:
+  non_executable: true
+  declarative_only: true
+  explicit_meaning_required: true

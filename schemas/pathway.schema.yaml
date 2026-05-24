@@ -1,0 +1,12 @@
+schema: operational_pathway
+version: 1
+required_fields:
+  - pathway
+  - states
+  - allowed_transitions
+  - required_primitives
+  - manual_review_required
+invariants:
+  hidden_transitions_forbidden: true
+  lineage_required: true
+  authority_required: true

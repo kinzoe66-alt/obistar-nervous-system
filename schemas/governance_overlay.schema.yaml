@@ -1,0 +1,12 @@
+schema: governance_overlay
+version: 1
+required_fields:
+  - governance_domain
+  - applies_to_pathways
+  - constraints
+  - review_requirements
+  - manual_review_required
+invariants:
+  may_not_override_primitives: true
+  must_remain_declarative: true
+  autonomous_final_action_forbidden: true

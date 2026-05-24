@@ -1,0 +1,13 @@
+composition: governed_validation_runtime
+version: 1
+uses:
+  primitive_standard: standards/continuity_primitives.yaml
+  pathway: pathways/governed_validation_pathway.yaml
+  governance_overlay: overlays/governed_validation_overlay.yaml
+runtime_expectations:
+  engine_required: true
+  core_runtime_required: true
+  nervous_system_required: true
+  review_adjudication_loop_required: true
+manual_review_required: true
+autonomous_submission: false

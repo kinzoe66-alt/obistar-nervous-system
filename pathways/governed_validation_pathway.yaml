@@ -1,0 +1,28 @@
+pathway: governed_validation
+version: 1
+states:
+  - intake
+  - replay_template
+  - cli_replay
+  - replay_artifact
+  - review_package
+  - manual_adjudication
+allowed_transitions:
+  intake:
+    - replay_template
+  replay_template:
+    - cli_replay
+  cli_replay:
+    - replay_artifact
+  replay_artifact:
+    - review_package
+  review_package:
+    - manual_adjudication
+required_primitives:
+  - semantic_identity
+  - authority_boundary
+  - replay_continuity
+  - review_escalation
+  - continuity_lineage
+manual_review_required: true
+autonomous_submission: false
