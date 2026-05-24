@@ -1,0 +1,11 @@
+primitive: constraint_envelope
+version: 1
+law: impossible_meanings_must_be_declared
+requires:
+  - allowed_meanings
+  - denied_meanings
+  - enforcement_surface
+forbids:
+  - ambiguous_boundary
+  - constraint_bypass
+manual_review_required: true

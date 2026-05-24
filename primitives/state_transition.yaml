@@ -1,0 +1,11 @@
+primitive: state_transition
+version: 1
+law: state_changes_must_be_declared
+requires:
+  - from_state
+  - to_state
+  - transition_reason
+forbids:
+  - hidden_transition
+  - untraceable_state_change
+manual_review_required: true

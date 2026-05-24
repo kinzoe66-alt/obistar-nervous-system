@@ -1,0 +1,11 @@
+primitive: authority_boundary
+version: 1
+law: authority_must_be_scoped
+requires:
+  - actor
+  - scope
+  - allowed_actions
+forbids:
+  - implicit_escalation
+  - cross_scope_action
+manual_review_required: true

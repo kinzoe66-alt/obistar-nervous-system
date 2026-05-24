@@ -1,0 +1,11 @@
+primitive: continuity_lineage
+version: 1
+law: current_state_must_have_lineage
+requires:
+  - prior_state
+  - current_state
+  - transition_trace
+forbids:
+  - orphan_state
+  - lineage_gap
+manual_review_required: true

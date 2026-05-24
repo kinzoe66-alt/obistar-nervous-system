@@ -1,0 +1,11 @@
+primitive: replay_continuity
+version: 1
+law: governed_actions_must_be_replayable
+requires:
+  - replay_sequence
+  - deterministic_steps
+  - evidence_output
+forbids:
+  - non_reproducible_claim
+  - unbounded_replay
+manual_review_required: true

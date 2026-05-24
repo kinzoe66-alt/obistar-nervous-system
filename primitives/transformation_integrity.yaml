@@ -1,0 +1,11 @@
+primitive: transformation_integrity
+version: 1
+law: meaning_transformation_must_be_explicit
+requires:
+  - input_semantic_type
+  - output_semantic_type
+  - transformation_rule
+forbids:
+  - implicit_reinterpretation
+  - type_downgrade_to_raw
+manual_review_required: true

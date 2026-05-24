@@ -1,0 +1,12 @@
+primitive: artifact_governance
+version: 1
+law: artifacts_must_have_declared_handling
+requires:
+  - artifact_type
+  - allowed_formats
+  - processing_pipeline
+forbids:
+  - undeclared_execution
+  - undeclared_rendering
+  - shell_expansion
+manual_review_required: true

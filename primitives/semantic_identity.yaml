@@ -1,0 +1,10 @@
+primitive: semantic_identity
+version: 1
+law: meaning_must_be_explicit
+requires:
+  - semantic_type
+  - allowed_interpretations
+forbids:
+  - implicit_meaning_change
+  - raw_unbounded_interpretation
+manual_review_required: true

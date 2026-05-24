@@ -1,0 +1,11 @@
+primitive: operational_pathway
+version: 1
+law: workflows_are_continuity_paths
+requires:
+  - pathway_name
+  - states
+  - allowed_transitions
+forbids:
+  - undefined_path_movement
+  - hidden_workflow_branch
+manual_review_required: true

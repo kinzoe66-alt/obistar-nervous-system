@@ -1,0 +1,11 @@
+primitive: review_escalation
+version: 1
+law: uncertainty_requires_review
+requires:
+  - escalation_reason
+  - reviewer_scope
+  - evidence_bundle
+forbids:
+  - autonomous_final_adjudication
+  - silent_rejection
+manual_review_required: true
