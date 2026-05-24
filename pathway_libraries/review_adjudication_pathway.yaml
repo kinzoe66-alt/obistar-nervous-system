@@ -1,0 +1,23 @@
+pathway: review_adjudication
+version: 1
+states:
+  - evidence_received
+  - replay_verified
+  - reviewer_package_ready
+  - manual_adjudication
+  - outcome_recorded
+allowed_transitions:
+  evidence_received:
+    - replay_verified
+  replay_verified:
+    - reviewer_package_ready
+  reviewer_package_ready:
+    - manual_adjudication
+  manual_adjudication:
+    - outcome_recorded
+required_primitives:
+  - replay_continuity
+  - review_escalation
+  - continuity_lineage
+manual_review_required: true
+autonomous_submission: false

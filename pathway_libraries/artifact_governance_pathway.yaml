@@ -1,0 +1,24 @@
+pathway: artifact_governance
+version: 1
+states:
+  - artifact_received
+  - format_checked
+  - metadata_extracted
+  - immutable_storage
+  - reviewer_rendered
+allowed_transitions:
+  artifact_received:
+    - format_checked
+  format_checked:
+    - metadata_extracted
+  metadata_extracted:
+    - immutable_storage
+  immutable_storage:
+    - reviewer_rendered
+required_primitives:
+  - semantic_identity
+  - artifact_governance
+  - transformation_integrity
+  - continuity_lineage
+manual_review_required: true
+autonomous_submission: false

@@ -1,0 +1,20 @@
+pathway: identity_continuity
+version: 1
+states:
+  - identity_claimed
+  - semantic_identity_checked
+  - authority_scope_checked
+  - continuity_confirmed
+allowed_transitions:
+  identity_claimed:
+    - semantic_identity_checked
+  semantic_identity_checked:
+    - authority_scope_checked
+  authority_scope_checked:
+    - continuity_confirmed
+required_primitives:
+  - semantic_identity
+  - authority_boundary
+  - continuity_lineage
+manual_review_required: true
+autonomous_submission: false

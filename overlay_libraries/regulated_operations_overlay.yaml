@@ -1,0 +1,17 @@
+governance_domain: regulated_operations
+version: 1
+applies_to_pathways:
+  - review_adjudication
+  - artifact_governance
+  - identity_continuity
+constraints:
+  bounded_authority_required: true
+  declared_artifacts_required: true
+  lineage_required: true
+  manual_review_required: true
+review_requirements:
+  evidence_bundle_required: true
+  replay_or_trace_required: true
+  reviewer_scope_required: true
+manual_review_required: true
+autonomous_submission: false

@@ -1,0 +1,17 @@
+composition: review_infrastructure
+version: 1
+uses:
+  primitive_compression: compression/primitive_compression.yaml
+  pathways:
+    - pathway_libraries/review_adjudication_pathway.yaml
+    - pathway_libraries/artifact_governance_pathway.yaml
+    - pathway_libraries/identity_continuity_pathway.yaml
+  overlays:
+    - overlay_libraries/regulated_operations_overlay.yaml
+    - overlay_libraries/internal_policy_overlay.yaml
+runtime_expectations:
+  deterministic_transitions: true
+  lineage_preserved: true
+  manual_adjudication_required: true
+  autonomous_submission: false
+manual_review_required: true

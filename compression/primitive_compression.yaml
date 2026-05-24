@@ -1,0 +1,20 @@
+compression: continuity_primitives
+version: 1
+core_primitives:
+  - semantic_identity
+  - authority_boundary
+  - state_transition
+  - transformation_integrity
+  - artifact_governance
+  - replay_continuity
+  - review_escalation
+  - continuity_lineage
+  - constraint_envelope
+  - operational_pathway
+non_goals:
+  - app_specific_logic
+  - executable_contracts
+  - procedural_workflows
+  - domain_micro_rules
+manual_review_required: true
+autonomous_submission: false

@@ -1,0 +1,14 @@
+governance_domain: internal_policy
+version: 1
+applies_to_pathways:
+  - review_adjudication
+  - artifact_governance
+constraints:
+  policy_trace_required: true
+  undeclared_transformation_forbidden: true
+  implicit_authority_forbidden: true
+review_requirements:
+  policy_exception_requires_review: true
+  outcome_record_required: true
+manual_review_required: true
+autonomous_submission: false
