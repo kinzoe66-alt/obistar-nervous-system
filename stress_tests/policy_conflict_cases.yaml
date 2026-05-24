@@ -1,0 +1,19 @@
+conflict_cases: policy_conflict_stress
+version: 1
+cases:
+  - case_id: replay_conflict
+    overlay_a:
+      deterministic_replay_required: true
+    overlay_b:
+      deterministic_replay_required: false
+    expected_result: conflict_detected
+    manual_review_required: true
+
+  - case_id: authority_conflict
+    overlay_a:
+      bounded_authority_required: true
+    overlay_b:
+      bounded_authority_required: false
+    expected_result: conflict_detected
+    manual_review_required: true
+autonomous_submission: false

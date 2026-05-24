@@ -1,0 +1,17 @@
+invalid_cases: governance_integrity_stress
+version: 1
+cases:
+  - case_id: primitive_override_attempt
+    invalid_behavior: lower_layer_overrides_primitive
+    expected_result: rejected
+
+  - case_id: hidden_transition_attempt
+    invalid_behavior: undeclared_state_transition
+    expected_result: rejected
+
+  - case_id: missing_lineage_attempt
+    invalid_behavior: orphan_state
+    expected_result: rejected
+
+manual_review_required: true
+autonomous_submission: false

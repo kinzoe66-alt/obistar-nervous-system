@@ -1,0 +1,17 @@
+stress_suite: continuity_infrastructure
+version: 1
+categories:
+  - primitive_integrity_stress
+  - lineage_continuity_stress
+  - policy_conflict_stress
+  - composition_explosion_stress
+  - review_compression_stress
+  - governance_integrity_stress
+protected_invariants:
+  - primitive_compression
+  - bounded_authority
+  - deterministic_replay
+  - manual_adjudication_continuity
+  - lineage_required
+manual_review_required: true
+autonomous_submission: false
